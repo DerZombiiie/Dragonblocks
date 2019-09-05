@@ -1,0 +1,4 @@
+#spielfeld{border-style:solid;border-width:1px;width:750px;height:750px;position:relative;background:url(sky.jpg);background-size:cover}
+#player{background-size:contain}
+#commands{background-color:black;color:white;position:fixed;bottom:0px;left:0px;width:1000px;border-color:black;border-style:solid}
+

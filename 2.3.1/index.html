@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dragonblocks 2.3.1</title>
+	<meta charset="utf-8">	
+<link rel="icon" href="Menu/icon.png">	
+
+<script defer src="Engine/init.js"></script>
+<script defer src="Engine/functions.js"></script>
+<script defer src="Engine/map.js"></script>
+<script defer src="Engine/movement.js"></script>
+<script defer src="Engine/options.js"></script>
+<script defer src="Engine/farm.js"></script>
+<script defer src="Engine/digging.js"></script>
+<script defer src="Engine/building.js"></script>
+<script defer src="Engine/inventory.js"></script>
+<script defer src="Engine/mapgen.js"></script>
+
+<script defer src="settings.js"></script>
+
+<script defer src="Mods/default/init.js"></script>
+<script defer src="Mods/wool/init.js"></script>
+<script defer src="Mods/useless/init.js"></script>
+<script defer src="Mods/player_skins/init.js"></script>
+<script defer src="Mods/mc_blocks/init.js"></script>
+<script defer src="Mods/freezemapping/init.js"></script>
+<script defer src="Mods/worldedit/init.js"></script>
+<script defer src="Mods/moremapgens/init.js"></script>
+<script defer src="Mods/moretrees/init.js"></script>
+
+
+<script defer src="Maps/sea.js"></script>
+<script defer src="Maps/house.js"></script>
+<script defer src="Maps/show.js"></script>
+<script defer src="Maps/spooky.js"></script>
+
+</head>
+<body >
+
+<center id="logo">
+	
+<img src="Menu/logo.png" width=1000 >
+<h1 style="font-family:Ubuntu;font-size:100px;">Loading...</h1>
+</center>
+
+<div id="spielfeld" style="border-style:solid;border-width:1px;width:750px;height:750px;position:absolute;top:5px;visibility:hidden">
+	<div id="player" style="height:30px;width:30px;border-radius:5%;position:absolute;"></div>
+	<div name="spalte0">
+		<div name="zeile0"></div>
+		<div name="zeile1"></div>
+		<div name="zeile2"></div>
+		<div name="zeile3"></div>
+		<div name="zeile4"></div>
+		<div name="zeile5"></div>
+		<div name="zeile6"></div>
+		<div name="zeile7"></div>
+		<div name="zeile8"></div>
+		<div name="zeile9"></div>
+		<div name="zeile10"></div>
+		<div name="zeile11"></div>
+		<div name="zeile12"></div>
+		<div name="zeile13"></div>
+		<div name="zeile14"></div>
+		<div name="zeile15"></div>
+		<div name="zeile16"></div>
+		<div name="zeile17"></div>
+		<div name="zeile18"></div>
+		<div name="zeile19"></div>
+		<div name="zeile20"></div>
+		<div name="zeile21"></div>
+		<div name="zeile22"></div>
+		<div name="zeile23"></div>
+		<div name="zeile24"></div>
+	</div>
+	<div name="spalte1">
+		<div name="zeile0"></div>
+		<div name="zeile1"></div>
+		<div name="zeile2"></div>
+		<div name="zeile3"></div>
+		<div name="zeile4"></div>
+		<div name="zeile5"></div>
+		<div name="zeile6"></div>
+		<div name="zeile7"></div>
+		<div name="zeile8"></div>
+		<div name="zeile9"></div>
+		<div name="zeile10"></div>
+		<div name="zeile11"></div>
+		<div name="zeile12"></div>
+		<div name="zeile13"></div>
+		<div name="zeile14"></div>
+		<div name="zeile15"></div>
+		<div name="zeile16"></div>
+		<div name="zeile17"></div>
+		<div name="zeile18"></div>
+		<div name="zeile19"></div>
+		<div name="zeile20"></div>
+		<div name="zeile21"></div>
+		<div name="zeile22"></div>
+		<div name="zeile23"></div>
+		<div name="zeile24"></div>
+	</div>
+<div name="spalte2">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte3">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte4">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte5">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte6">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte7">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte8">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte9">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte10">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte11">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte12">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte13">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte14">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte15">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte16">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte17">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte18">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte19">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte20">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte21">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte22">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte23">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<div name="spalte24">
+	<div name="zeile0"></div>
+	<div name="zeile1"></div>
+	<div name="zeile2"></div>
+	<div name="zeile3"></div>
+	<div name="zeile4"></div>
+	<div name="zeile5"></div>
+	<div name="zeile6"></div>
+	<div name="zeile7"></div>
+	<div name="zeile8"></div><div name="zeile9"></div>
+	<div name="zeile10"></div><div name="zeile11"></div><div name="zeile12"></div><div name="zeile13"></div><div name="zeile14"></div><div name="zeile15"></div><div name="zeile16"></div><div name="zeile17"></div><div name="zeile18"></div><div name="zeile19"></div>
+	<div name="zeile20"></div>
+	<div name="zeile21"></div>
+	<div name="zeile22"></div>
+	<div name="zeile23"></div>
+	<div name="zeile24"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+
+
+
+</div>
+
+
+<div id="ModExtras" style="visibility:hidden;"></div>
+
+<div id="layer" style="position:fixed;top:0px;left:0px;background-color:black;opacity:0.8;visibility:hidden;"></div>
+
+<div id="newWindow"style="visibility:hidden;position:absolute;top:150px;border-style:outset;width:850px;height:500px;background-color:grey">
+<div onclick='closeWindow();inventory=false;' style='cursor:pointer;position:absolute;top:0px;right:0px;background-color:red;font-family:sans-serif;font-weight:bold;font-size:25px;height:40px;width:40px;line-height:35px;border-style:outset;border-color:red'>&ensp;x</div>
+<center id='newWindowContent'></center>
+</div>
+
+<div id="Options" style="position:fixed;background-color:grey;border-style:outset;border-color:darkgrey;visibility:hidden;width:600px;top:50px;">
+<center><h1 style="font-family:fantasy;font-size:40px">OPTIONS</h1></center>
+<div id="options-content" style="position:relative;left:50px;">
+<style>button{font-size:25px;border-radius:0%;width:500px;}</style>	
+<button onclick="if(optionsOn){toggleOptions()}">Back</button>
+<br><br>
+<button onclick="spawn();toggleOptions();">Respawn</button>
+<br><br>
+<button onclick="mapPlus()">Generate or Load Map</button>
+<br><br>
+<button onclick="eval(document.cookie);updateAll();toggleOptions();">Load Cookie Map [Firefox Only]</button>
+<br><br>
+<button onclick="save()">Save Map to Cookie [Firefox Only]</button>
+<br><br>
+<button onclick="SelectSkin()">Set Skin</button>
+<br><br>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DRAGONBLOCKS</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="Menu/icon1.png">	
+	<link rel="stylesheet" href="Menu/menu.css">
+	<script src="Menu/spash.js"></script>
+	<script src="Menu/menu.js"></script>
+</head>
+<body>
+	<img src="Menu/logo.png" id="logo">
+	<h3 id ="power">Powered by</h3>
+	<img src="Menu/gravity4.png" id="icon">
+	<h1 align="center">Dragonblocks</h1>
+
+	<div id="thecredits">
+		<center>
+	<h3>CREDITS</h3>
+		<h4>Main Development(Engine)</h4>
+			<ul>
+				<li>EliasFleckenstein</li>
+			</ul>
+		<h4>Development(Game & Mods)</h4>
+			<ul>
+				<li>EliasFleckenstein</li>
+				<li>DerZombiiie</li>
+			</ul>
+		<h4>Online Work</h4>
+			<ul>
+				<li>HimbeerServer</li>
+				<li>DerZombiiie</li>
+			</ul>
+		<h4>Textures</h4>
+			<ul>
+				<li>2.0: Taken from the www</li>
+				<li>Other 2:Taken from Minetest Game v4</li>
+				<li>3.0: Taken from Minetest Game v5</li>
+			</ul>
+		<h4>Thanks to Elidragon</h4>
+			<ul>
+				<li>EliasFleckenstein</li>
+				<li>DerZombiiie</li>
+				<li>TheodorSmall</li>
+				<li>HimbeerServer</li>
+				<li>SC</li>
+				<li>Anton</li>
+				
+			</ul>
+			<h4>Our HTML5/Javascript Teachers</h4>
+			<ul>
+			<li>db5fx</li>
+			<li>ablion</li>
+			<li>quizdidaktik</li>
+			<li><a href="http://wiki.selfhtml.org">wiki.selfhtml.org</a></li>
+			</ul>
+			</center>
+	</div>	
+	<div id="news">
+		
+		<h3>&emsp;What's new in Dragonblocks 2.3</h3>
+	
+		<ul>
+		<li>A Major Engine Bugfix and a few other changes</li>
+		<li>Added more Options</li>
+		<li>Better GUI for Options</li>
+		<li>Deleted useless leftover code from earlier versions</li>
+		<li>New Mods: wool, worldedit, useless (which adds stuff like tnt or doors, but without the its functions)</li>
+		<li>Seperation of Engine and Game: DONE! (We worked at it since 2.1)</li>
+		</ul>
+		
+	</div>
+	<div id="play">
+		<center>
+	<h3>Play Dragonblocks</h3>
+	Version:<select id="version">
+	<option>2.3</option>
+	<option>2.2</option>
+	<option>2.1</option>
+	<option>2.0</option>
+	<option>1.0</option>
+	</select>
+	&emsp;
+	<button onclick="play()">Play</button>
+	<br><br>
+	</center>
+	</div>
+	<div id="definition">
+
+		<h3>&emsp;What is Dragonblocks?</h3>
+		
+		<ul>
+		<li>Dragonblocks is a 2D Voxelgame</li>	
+		<li>Its A Browsergame that requires HTML5 and Javascript.</li>
+		<li>The saving of worlds only works with Firefox.(Or some other Gecko)</li>
+		<li>Mainly Inspired by <a href="http://minetest.net">Minetest</a></li>
+		<li>Developed by Elidragon, a group of pupils</li>
+		<li>Still Early Beta, 3.0 (in developent) will be the first really playable version.</li>
+		</ul>
+	
+	</div>
+	<div id="commands">
+	
+		<h3>&emsp;Commands</h3>
+		<h4>&emsp;2.0</h4>
+			<table>
+			<tr>	<td class="cmd">skin	</td>	<td class="td1" >	to set your Skin	</td>	</tr>
+			<tr>	<td class="cmd">	spawn	</td>	<td class="td1" >	to Respawn			</td>	</tr>
+			<tr>	<td class="cmd"> mapping1	</td>	<td class="td1" >	to Load Extra Map 1	</td>	</tr>
+			</table>
+			
+			
+		<h4>&emsp;2.1</h4>
+		<table>
+			<tr>	<td class="cmd">skin("&lt;skin&gt;")</td>	<td class="td1" >to set your Skin</td>	</tr>
+			<tr>	<td class="cmd">spawn()</span>		</td>	<td class="td1" >	to Respawn			</td>	</tr>
+			<tr>	<td class="cmd">setMap("&lt;extramap&gt;")</span>	</td>	<td class="td1" >	to Load Extra Map	</td>	</tr>
+			<tr>	<td class="cmd">changeMap(&lt;x&gt;,&lt;y&gt;,"&lt;block&gt;")</span>	</td>	<td class="td1" >	to Change the Block at x|y to &lt;block&gt;</td>	</tr>
+			<tr>	<td class="cmd">teleport(&lt;x&gt;,&lt;y&gt;)</span>	</td>	<td class="td1" >	to Teleport you to x|y</td>	</tr>
+			<tr>	<td class="cmd">su</span>	</td>	<td class="td1" >	to use Console as JavaScript Console (password required)</td>	</tr>
+			<tr>	<td class="cmd">generateMap("&lt;mapgen&gt;")</span>	</td>	<td class="td1" >to generate Map of the Kind &lt;mapgen&gt;</td>	</tr>
+			<tr>	<td class="cmd">SimpleDigging_setMode("&lt;digmode&gt;")</span>	</td>	<td class="td1" >to set the digmode to &lt;digmode&gt; (Survival or Creative)</td>	</tr>
+
+			</table>
+
+<br><br>
+	
+	</div>
+		<div id="mods">
+	
+		<h3>&emsp;Mods</h3>
+		<h4>&emsp;2.1</h4>
+		<ul>
+		<li>Simple Digging</li>
+		</ul>
+		<h4>&emsp;2.2</h4>
+		<ul>
+		<li>Simple Digging</li>
+		<li>Simple Building</li>
+		<li>freezeMapping</li>
+		<li>moreblocks</li>
+		</ul>
+		<h4>&emsp;2.3</h4>
+		<ul>
+		<li>default</li>
+		<li>freezemapping</li>
+		<li>mc_blocks(moreblocks in earlier versions)</li>
+		<li>player_skins</li>
+		<li>useless</li>
+		<li>wool</li>
+		<li>worldedit</li>
+		</ul>
+		<br>
+	</div>
+	<div id="editions">
+	<h3>&ensp;Editions</h3>
+		<table>
+			<tr><th>Number</th><th>Edition Name</th><th>Game</th><th>Engine</th><th>Release</th></tr>
+			<tr><td>1.0</td><td>Pancake</td><td>Jumping</td><td>Animation</td><td>03.01.2019</td></tr>
+			<tr><td>2.0</td><td>Trance</td><td>Gravity</td><td>Gravity1</td><td>03.03.2019</td></tr>
+			<tr><td>2.1</td><td>River</td><td>Dragonblocks</td><td>Gravity2</td><td>06.04.2019</td></tr>
+			<tr><td>2.2</td><td>Star</td><td>Dragonblocks</td><td>Gravity3</td><td>14.05.2019</td></tr>
+			<tr><td>2.3</td><td>Flashback</td><td>Dragonblocks</td><td>Gravity4</td><td>31.08.2019</td></tr>
+			<tr><td>3.0</td><td>Mithril</td><td>Dragonblocks</td><td>Gravity5</td><td>-unreleased-</td></tr>
+
+		</table>
+	</div>
+	<div id="mapgens">
+	
+		<h3>&emsp;Map Generators</h3>
+		<h4>&emsp;2.1</h4>
+		<ul>
+		<li>default</li>
+		<li>lake</li>
+		<li>flat</li>
+		</ul>
+		<h4>&emsp;2.2</h4>
+		<ul>
+		<li>default</li>
+		<li>lake</li>
+		<li>Cave</li>
+		<li>flat</li>
+		</ul>
+		<h4>&emsp;2.3</h4>
+		<ul>
+		<li>Default</li>
+		<li>Flat</li>
+		<li>Crazy</li>
+		<li>Random Mapgen</li>
+		</ul>
+		<h4>&emsp;3.0</h4>
+		<ul>
+		<li>v3</li>
+		<li>superflat</li>
+		</ul>
+	</div>
+	
+	<div id="extramaps">
+	
+		<h3>&emsp;Extra Maps</h3>
+		<h4>&emsp;2.0</h4>
+		<ul>
+		<li>map1(dungeonMap in later Versions)</li>
+		</ul>
+		<h4>&emsp;2.1</h4>
+		<ul>
+		<li>seaMap</li>
+		<li>dungeonMap</li>
+		</ul>
+		<h4>&emsp;2.2</h4>
+		<ul>
+		<li>chaosMap</li>
+		<li>spookyMap</li>
+		<li>houseMap</li>
+		<li>showMap</li>
+		<li>seaMap</li>
+		<li>dungeonMap</li>
+		</ul>
+		<h4>&emsp;2.3</h4>
+		<ul>
+		<li>spookyMap</li>
+		<li>houseMap</li>
+		<li>showMap</li>
+		<li>seaMap</li>
+		</ul>
+	</div>
+	<div id="plan">
+		<h3>&emsp;Spoiler</h3>
+		<h4>&emsp;&emsp;3.0</h4>
+		<ul>
+		<li>Complete Engine Upgrade</li>
+		<li>Be able to save multible worlds on the server</li>
+		<li>Player looks realistic</li>
+		<li>Inventory!</li>
+		<li>Be able to choose the Mods you want to play with</li>
+		<li>Better Mapgen</li>
+		<li>Easy Minetest-Inspired Modding API</li>
+		<li>An IRC-like console</li>
+		<li>Source Code will be published on GitHub</li>
+		</ul>
+		<h4>&emsp;&emsp;3.1</h4>
+		<ul>
+		<li>Ores</li>
+		<li>Crafting</li>
+		<li>Chests & Furnaces </li>
+		<li>Skyblocks</li>
+		</ul>
+		<h4>&emsp;&emsp;3.2</h4>
+		<ul>
+		<li>Minetest-Inspired Privilegues, like fly, fast, noclip usw.</li>
+		<li>Home Function</li>
+		<li>Damage & Hunger</li>
+		<li>Maybe Nether & End</li>
+		</ul>
+		<h4>&emsp;&emsp;4...</h4>
+		<ul>
+		<li>Mobs</li>
+		<li>Technic</li>
+		<li>TNT</li>
+		<li>Falling Blocks</li>
+		<li>Tools</li>
+		<li>Bows & Arrows</li>
+		<li>Floating Liquids</li>
+		<li>Fire</li>
+		<li>Beds</li>
+		<li>Buckets</li>
+		</ul>
+		<h4>&emsp;&emsp;5...</h4>
+		<ul>
+		<li>Daylight Cycle</li>
+		<li>An 1000 x 1000 World</li>
+		</ul>
+		<h4>&emsp;&emsp;6...</h4>
+		<ul>
+		<li>Mulitplayer!</li>
+		<li>Claim Buildings</li>
+		</ul>
+	</div>
+	
+<div id="controls">
+	
+		<h3>&emsp;Controls</h3>
+		<h4>&emsp;1.0</h4>
+			<table>
+			<tr>	<td   class="td1">ArrowUp</td>	<td class="td1" >To Jump</td>	</tr>
+			<tr>	<td class="td1">ArrowLeft</td>	<td class="td1" >To Move Left</td>	</tr>
+			<tr>	<td class="td1">ArrowRight</td>	<td class="td1" >To Move Right</td>	</tr>
+			<tr>	<td class="td1">PageUp</td>	<td class="td1" >To Jump Left</td>	</tr>
+			<tr>	<td class="td1">PageDown</td>	<td class="td1" >To Jump Right</td>	</tr>
+			</table>
+			
+		<h4>&emsp;2.0</h4>
+			<table>
+			<tr>	<td class="td1">ArrowLeft</td>	<td class="td1" >To Move Left</td></tr>
+			<tr>	<td class="td1">ArrowRight</td>	<td class="td1" >To Move Right</td>	</tr>
+			</table>
+			
+			
+		<h4>&emsp;2.1</h4>
+		<table>
+			<tr>	<td class="td1">ArrowLeft</td>	<td class="td1" >To Move Left</td></tr>
+			<tr>	<td class="td1">ArrowRight</td>	<td class="td1" >To Move Right</td>	</tr>
+			<tr>	<td class="td1">MouseDown</td>	<td class="td1" >To Dig</td></tr>
+			</table>
+		<h4>&emsp;2.2</h4>
+		<table>
+			<tr>	<td class="td1">ArrowLeft</td>	<td class="td1" >To Move Left</td></tr>
+			<tr>	<td class="td1">ArrowRight</td>	<td class="td1" >To Move Right</td>	</tr>
+			<tr>	<td class="td1">Space	</td>	<td class="td1" >To Jump</td></tr>
+			<tr>	<td class="td1">MouseDown on solid block </td>	<td class="td1" >To Dig</td></tr>
+			<tr>	<td class="td1">MouseDown on insolid block</td>	<td class="td1" >To Build</td></tr>	
+			<tr>	<td class="td1">ArrowDown</td>	<td class="td1" >To Select next item</td></tr>			
+			<tr>	<td class="td1">ArrowUp</td>	<td class="td1" >To Select previous item</td></tr>			
+			</table>	
+		<h4>&emsp;2.3</h4>
+		<table>
+			<tr>	<td class="td1">ArrowLeft</td>	<td class="td1" >To Move Left</td></tr>
+			<tr>	<td class="td1">ArrowRight</td>	<td class="td1" >To Move Right</td>	</tr>
+			<tr>	<td class="td1">Space	</td>	<td class="td1" >To Jump</td></tr>
+			<tr>	<td class="td1">MouseDown (left) on solid block </td>	<td class="td1" >To Dig</td></tr>
+			<tr>	<td class="td1">MouseDown (right) on insolid block</td>	<td class="td1" >To Build</td></tr>	
+			<tr>	<td class="td1">MouseWheel Down</td>	<td class="td1" >To Select next item</td></tr>			
+			<tr>	<td class="td1">MouseWheel Up</td>	<td class="td1" >To Select previous item</td></tr>
+			<tr>	<td class="td1">n</td>	<td class="td1" >To Select next item</td></tr>			
+			<tr>	<td class="td1">b</td>	<td class="td1" >To Select previous item</td></tr>
+			<tr>	<td class="td1">1 - 8</td><td class="td1" >To Select item</td></tr>
+			<tr>	<td class="td1">Escape</td><td class="td1" >To open/close Options Menu</td></tr>
+			<tr>	<td class="td1">i</td><td class="td1" >To open/close Inventory</td></tr>								
+			</table>		
+
+<br><br>
+	
+	</div>
+	
+	<div id='history'>
+	<div id='history-cont'>
+	<h3>History</h3>
+	<h4>1.0</h4>
+	<span>It all begun at 01.01.2019, when I [Fleckenstein] decidet to do a new Eligame.I wanted to make it a Jumping Game in which you need to jump down from the top,a little bit like Doodle Jump, just inverted.For it were christmas holidays, i time for coding the whole day and after three days i was finished. The Engine was done (through it had many bugs) and so was the first level. But in these time programming style, seperation of engine and game et cetera were unknown words for me. I couldn't find a way throu my own code. I stopped the Project.</span>
+	<h4>2.0</h4>
+	<span>But the story continues: Surprisingly exactly three months after the start of it all, at the 01.03.2019, In the easter holidays. I spent the previous week with hard gaming. 10 hours a day i was playing on ctf.rubenwardy.com, a Capture the Flag Minetest Server (So dont think programmers are hobbyless nerds that dont know the fun in gaming). But after six days it kinda got too boring. So i started to code. My plan was a redo of my project from three months ago, but this time with a better concept: 2D voxel. I named the Engine and the Game Gravity, because that's what was the most difficult of the whole project: the physics Engine. Then I fell in some kind of trance, i could only think in JavaScript anymore. After three days the goal was actually reached. Then School started again and there was no time for coding (or gaming) anymore.</span>
+	<br><br>
+	<center><img src="Menu/gravity1.png" width=300></center>
+	<h4>2.1</h4>
+	<span>The one who made me contine the project was my Friend DerZombiiie. He liked the project because he is a big minecraft fan himself and we started working on the version 2.1. I brought my laptop to school everyday and In the breaks me, DerZombiiie and SC sat on a couch in the school libary, developing. In most times I brought some sheets that were filled with Code. I wrote them in class (because the ninth grade is seriously useless, you dont learn ANYTHING). It were really nice times back then and then Engine was growing and getting better. I named the Game Dragonblocks and the my style was getting better slowly. I was quite proud when the development was over, and I had many Ideas how to improve then Game further.</span>
+	<br><br>
+	<center><img src="Menu/gravity2.png" width=300></center>
+	<h4>2.2</h4>
+	<span>The development of Dragonblocks 2.2 started on the day 2.1 was finished. The biggest goals were to make jumping and building possible. Also I refactored the Engine completely because there were many things that were ... well, big shit. I already noticed a lot of them during 2.1 but I always thought : Let's do it later. I also added a Options Menu, through it was quite minimalistic. I decided to stop bringing my Laptop to School because People mostly thoght I was gaming or something and found it strange. But there were PC Workstations in the School Libary and I also developed in Informatic Class. We were learning about sqlite3 Databases. Sqlite can be very useful if you connect it with php or lua or something, but JUST sqlite is useless and boring. I already knew sqlite, so I was doing something else most times. My classmates didn't, but they were doing something else, too, because they didn't care about informatic at all. Another difference was that while I was programming they were gaming or watching pornos(!) or looking for cute monkey pictures while throwing their buggers at each other. My Informatic Teacher, ablion, hated my class and i totally agree with him. So this year of Informatic was a lot of fun for me and no fun for my Classmates because anyone to misbehave got a bad grade. And Ablion... well, lets say each informatic lesson he got about 50 new pages to add to the school firewall. <br>Another big part of Dragonblocks 2.2 was made on the Workstations in the School Libary. But again there were fools messing it. There were 5 Workstations and if you wanted to get one at the start of the break you had to hurry. On one PC I was developing Dragonblocks. Sometimes DerZombiiie also got one and developed parts of the game. On all the other PCs there were kids watching funny cat videos or playing online games or something. Many were playing Cookieclicker. And they got more every break. One day there were 30 people staring at the screens, pushing each other and the libary turned form the quietest place of the school into the loudest. Sometimes they took my USB Stick and didn't give it back till we told a teacher. But then the teachers denied ANY activities on the Workstations but research. And any but research includes coding. So we got banned from the Workstations, through we were the only ones to use them for usefull things. I never put my foot into the libary again. That's when DerZombiiie and I founded Elidragon. The development of Dragonblocks 2.2 was finished at the 14th of June.</span>
+	<br><br>
+	<center><img src="Menu/gravity3.png" width=300></center>
+	<h4>2.3</h4>
+	<span>After 2.2 i started 3.0 because the Gravity3 Engine had many corners that were junk, lots of leftover code that had no use anymore and still a bad style. But during the development of 3.0 I decidet thought i could do an 2.2.1 to make 2.2 more playable. But that got a bigger project so I named it 2.3.</span>
+	<br><br>
+	<center><img src="Menu/gravity4.png" width=300></center>
+	<h4>3.0</h4>
+	<span>Coming Soon or maybe not so Soon... The development probably wont be finished before 2020, but we're working really hard on it.</span>
+	<br><br>
+	<center><img src="Menu/gravity5.png" width=300></center>
+	<br><br>
+	</div>
+	</div>
+	<div id='splashtexts'>
+		<h3>&ensp; Splash Texts</h3>
+	<table>
+	<tr><td><b>Index</b></td><td class="td1" ><b>Text</b></td>	<td class="td1" ><b>Meaning</b></td></tr>
+	<tr><td>0</td><td class="ubu"  >The 9th Month of Development</td><td class="td1" ><var>obvious</var></td></tr>
+	<tr><td >1</td><td class="ubu" >Plopping Tags</td><td class="td1" >Dragonblocks has Splashtexts like Minecraft. Addictionaly, its the Splashtext for Wurst Client, a hackclient for Minecraft.</td></tr>
+	<tr><td>2</td><td class="ubu" >Crazy!</td><td class="td1" >lol</td></tr>
+	<tr><td>3</td><td class="ubu" >Lion Guard Tribute</td><td class="td1" >The Lion Guard is the silliest tv show on earth but i like it because im Hardcore TLK (The Lion King) fan.</td></tr>
+	<tr><td>4</td><td class="ubu" >Inspired by <a href='http://minetest.net'>Minetest</a></td><td class="td1" ><var>obvious</var></td></tr>
+	<tr><td>5</td><td class="ubu" >Open Source</td><td class="td1" >Open Source is actually incorrect if it's about JavaScript, but parts of Gravity5 will be php, C and lua, so this will be published on GitHub.</td></tr>
+	<tr><td>6</td><td class="ubu" >WTFPL</td><td class="td1" >All of my works are published under the "<var>Do What The Fuck you want Public License</var>": <a href="http://www.wtfpl.net/">http://www.wtfpl.net</a> </td></tr>
+	<tr><td>7</td><td class="ubu" >by Elidragon</td><td class="td1" >Actually Dragonblocks is only by DerZombiiie and Fleckenstein but we could have never done it without Elidragon.</td></tr>
+	<tr><td>8</td><td class="ubu" >2D</td><td class="td1" ><var>obvious</var></td></tr>
+	<tr><td>9</td><td class="ubu" >Hello Geeks!</td><td class="td1" >The Spashtexts of Minecraft contain a Hello message for every language. Like "Hello USA" or "Hallo Deutschland". Hello Geeks!</td></tr>
+	<tr><td>10</td><td class="ubu" >JavaScript forever</td><td class="td1" >I'm into JavaScript, C, C++, Lua(Minetest Modding!) and Java but my favorite is still JavaScript. Too bad there is no serious JS compiler. I should really try node.js...</td></tr>
+	<tr><td>11</td><td class="ubu" >Hello my name is bumblebee...</td><td class="td1" >This is a song my sister leared at school and now she's singing it all the time. I just cant get it out of my brain.</td></tr>
+	<tr><td>12</td><td class="ubu" >Nyan nyan nyan...</td><td class="td1" ><a href='http://nyan.cat'>nyan.cat</a></td></tr>
+	<tr><td>13</td><td class="ubu" >Do you have an WLAN-Cable for me?</td><td class="td1" >WLAN means WIRELESS Local Area Network so it doesnt have Cables.</td></tr>
+	<tr><td>14</td><td class="ubu" >$ apt moo</td><td class="td1" >..."Have you mooed today?"...<br>(If you're not on linux just forget it)</td></tr>
+	<tr><td>15</td><td class="ubu" >Super Tux</td><td class="td1" >Best Game! (after Minetest) </td></tr>
+	<tr><td>16</td><td class="ubu" >Ibi sunt comae, ibi est calva</td><td class="td1" >This is a running gag/insider because in the 5th grade in latin class we read a text about a Senator who has no hairs and in the story somebody wrote onto a wall "Ubi sunt comae, ubi est calva?" which means "Where is the hair, where is the brain?". For I have long hair I can say "Here is the hair, here is the brain."</td></tr>
+	<tr><td>17</td><td class="ubu" >Be smart. Use Linux.</td><td class="td1" >Windows is Shit</td></tr>
+	<tr><td>18</td><td class="ubu" >//Cool</td><td class="td1" >// is used in JavaScript, C, php, Java and lots of other languages to Comment Something, for example if you write<br><font style="font-family:monospace">var myWindow = window.open("New Window"); //Open a PopUp</font><br>the //Open a PopUp will be ignored by the Browser, but it makes your program more understandable for people who read it.</font></td></tr>
+	<tr><td>19</td><td class="ubu" >Ubi WLAN ibi Patria</td><td class="td1" >Latin for "Home is where my WLAN is"</td></tr>
+	<tr><td>20</td><td class="ubu" >Because Gaming was to Boring</td><td class="td1" >The Motto of Gravity1. Read the History Box to understand it.</td></tr>
+	<tr><td>21</td><td class="ubu" >Very Well!</td><td class="td1" >The Motto of Gravity2. A quote from Rafiki from the Lion Guard.</td></tr>
+	<tr><td>22</td><td class="ubu" >This is the real thing!</td><td class="td1" >The Motto of Gravity3.</td></tr>
+	<tr><td>23</td><td class="ubu" >Optimizing the Engine</td><td class="td1" >The Motto of Gravity4. A parody of discord's "Optimizing the People"</td></tr>
+	<tr><td>24</td><td class="ubu" >Everything js possible</td><td class="td1" >The Motto of Gravity5. js instead of is because js is the Shortcut for JavaScript.</td></tr>
+	<tr><td>25</td><td class="ubu" >Try 1.0 its funny</td><td class="td1" >if you jump of an edge in version 1.0 the Engine Collapses and when you try to jump then you just fly. The fist time DerZombiiie showed me this bug I got an laugh flash.</td></tr>
+	<tr><td>26</td><td class="ubu" >3.0 in development</td><td class="td1" ><var>obvious</var></td></tr>
+	<tr><td>27</td><td class="ubu" >Lion King Tribute</td><td class="td1" ><var>See Index 3.</var></td></tr>
+	<tr><td>28</td><td class="ubu" >Hello Gamers</td><td class="td1" ><var>See Index 9.</var></td></tr>
+	</table>
+	</div>
+	
+	
+	
+	<div id="credits">
+	<span id="fleckensteinproductions">Fleckenstein Productions</span>
+	<img id="fleckensteinlogo"src="Menu/Fleckenstein.gif"  width="100">
+	<img id="eligameslogo"  src="Menu/EliGames.gif" width="100" >
+	</div>
+	
+	<div id="creditsdz">
+  <span id="dzstudios">DZ Studios</span>
+	<img id="dzlogo"src="Menu/dzblock.png" width="40">
+	</div>
+	<center><div id="mysplash"><span id="splash" ></span></div></center>
+
+</body>
+</html>

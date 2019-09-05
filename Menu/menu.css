@@ -1,0 +1,37 @@
+	html{height:1600px}
+	body{background-image:url(sky.png);background-size:cover;background-attachment:fixed}
+	#thecredits{position:absolute;background-color:skyblue;left:1175px;width:400px;top:140px}
+	#news{position:absolute;background-color:green;left:460px;width:700px;top:130px;}
+	#play{position:absolute;background-color:yellow;left:20px;width:400px;top:300px;}
+	#definition{background-color:red;position:absolute;left:530px;top:360px;width:600px}
+	#commands{background-color:black;color:white;position:absolute;left:450px;top:600px;width:650px}
+	#mods{background-color:pink;position:absolute;left:50px;top:420px;width:300px}
+	#editions{background-color:blue;position:absolute;left:1000px;top:1150px;width:500px}
+	#plan{background-color:orange;position:absolute;left:930px;top:1450px;width:600px}
+	#mapgens{background-color:lightgreen;position:absolute;left:20px;top:1000px;width:400px}
+	#extramaps{background-color:brown;position:absolute;left:500px;top:1150px;width:400px}
+	#icon{position:absolute;width:200px;top:220px;left:120px}
+	#power{position:absolute;top:170px;left:155px}
+	#logo{position:absolute;width:400px;top:30px;left:50px}
+	div{opacity:0.85}
+	*{opacity:1}
+	#dzlogo{position:absolute;top:5px;left:10px;}
+	#creditsdz{position:fixed;right:5px;background-color:#704030;top:60px;height:50px;width:340px}
+	#dzstudios{font-family:'Metal Mania';position:relative;top:4px;left:55px;color:#00ff00;width:200px;height:28px;font-size:35px}
+	#eligameslogo{position:absolute;top:5px;left:230px}
+	#fleckensteinlogo{position:absolute;top:-25px;left:-25px}
+	#fleckensteinproductions{font-family:'Ani';position:relative;top:10px;left:50px;color:white;width:200px;height:28px;}
+	#credits{position:fixed;right:5px;background-color:black;top:5px;height:50px;width:340px}
+	.cmd{font-family:monospace;width:315px;}
+	.ubu{font-family:Ubuntu;width:315px;}
+	.td1{width:315px;}
+	td,th{border: 1px solid}
+	table{display:inline}
+	#controls{background-color:white;left:50px;top:1750px;position:absolute;}
+	#history{background-color:#A43700;left:800px;top:2500px;position:absolute;width:700px;}
+	h1{color:#4b1019;font-family:Ubuntu;font-size:60px}
+	#power{color:#4b1019;font-family:Ubuntu;}
+	#splash{font-family:Ubuntu;position:relative;top:-25px;color:yellow;left:180px;font-size:26px;}
+	#mysplash{transform:rotate(-15deg);}
+	#history-cont{position:relative;left:20px;width:600px;}
+	#splashtexts{position:absolute;top:2900px;left:30px;background-color:cyan}

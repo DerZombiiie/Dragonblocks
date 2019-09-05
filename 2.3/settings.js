@@ -1,0 +1,10 @@
+var frequency=50; 
+var lame = 20; 									//The lamer your computer is the bigger should be this...(At least 100 if you're on Windows)
+var bpoint=0.01;								
+var playerSkin="red";							//default player Skin
+var gravity=9.81;
+var velocity=3;
+var jumpspeed = 50;	
+var creativemode = false;
+var hudbar = [air,air,air,air,air,air,air,air];
+var texturemod = "default";						//the mod in which the textures like crack0.png etc. are saved

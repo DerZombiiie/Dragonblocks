@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<title>Jumping Game-Elidragon Programming</title>
+		<meta charset="utf-8">
+		<script>
+			var oby=null;
+			var ground=null;
+			var stage=0;
+			var hi=30;
+			window.addEventListener("DOMContentLoaded", function(){	
+			oby=document.getElementById('oby');
+			ground=document.getElementById('ground');
+			});
+			window.addEventListener("DOMContentLoaded", check);
+			window.addEventListener("DOMContentLoaded", fall);
+			window.addEventListener("keypress", move);
+			window.addEventListener("keyup", jump);
+			function move(evt){
+			if(evt.key==="ArrowRight"){
+				evt.preventDefault();
+			oby.style.left=(parseInt(oby.style.left.replace(/px$/,''))+15)+"px";
+			}
+			if(evt.key==="ArrowLeft"){
+				evt.preventDefault();
+			oby.style.left=(parseInt(oby.style.left.replace(/px$/,''))-15)+"px";
+			}
+			if(evt.key==="ArrowUp"){
+			evt.preventDefault();
+			}
+			if(evt.key==="PageUp"){
+			evt.preventDefault();
+			}
+			if(evt.key==="PageDown"){
+			evt.preventDefault();
+			}
+	
+				}
+			function check(){
+		    var ground=document.getElementsByName('g')[stage];
+		    var gl=parseInt(ground.style.left.replace(/px$/,''));
+		    var gw=parseInt(ground.style.width.replace(/px$/,''));
+		    var ol=parseInt(oby.style.left.replace(/px$/,''));
+		    var ow=parseInt(oby.style.width.replace(/px$/,''));
+			if(gl>=parseInt(ow+ol)||ol>=parseInt(gw+gl)){
+				stage+=1;
+				fall();
+			    }
+			if(stage===2&&ol>1200&&ol<=1225){
+				location.reload();
+				var won=window.open("won.html", "Gewonnen", "width=750, height=325,top=100,left=300");
+				won.focus();
+				}    
+			var to2=setTimeout(check, 100);
+			}
+				function fall(){
+				var ground=document.getElementsByName('g')[stage];
+				if(parseInt(oby.style.top.replace(/px$/,''))<(parseInt(ground.style.top.replace(/px$/,''))-75)){
+					oby.style.top=(parseInt(oby.style.top.replace(/px$/,''))+5)+"px";
+					var to3=setTimeout(fall, 10);
+					}
+					
+				}
+			function jump(evt){
+				
+				if(evt.key==="ArrowUp"||evt.key==="PageUp"||evt.key==="PageDown"){
+				to4=setTimeout(fall,100);
+				oby.style.top=(parseInt(oby.style.top.replace(/px$/,''))-hi)+"px";
+				hi-=5;
+				if (hi===0){hi=30;}
+				else{setTimeout(jump,30,evt);}
+				}
+				if(evt.key==="PageUp"){
+				oby.style.left=(parseInt(oby.style.left.replace(/px$/,''))-15)+"px";
+					}
+				if(evt.key==="PageDown"){
+				oby.style.left=(parseInt(oby.style.left.replace(/px$/,''))+15)+"px";
+					}
+				}
+		</script>
+		<style>
+			body{background:skyblue}
+			#oby{background-color:red;position:absolute;border-radius:30%}
+			#end{position:absolute;background-color:blue;border-radius:5%}
+			.g{position:absolute;background:#451705;border-top-style:solid;border-top-color:green;border-top-width:10px;border-radius:5%}
+			#nope{position:absolute;top:60px;left:50px;background-color:black;color:white;height:110px;width:500px;border-radius:1%;font-size:30px}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		
+		<div name="g" class="g"style="top:150px;left:0px;height:50px;width:1000px;"></div>
+		<div name="g" class="g"style="top:550px;left:600px;height:50px;width:1000px;"></div>
+		<div name="g" class="g"style="top:900px;left:-5px;height:50px;width:1500px;"></div>
+		
+		<div id="oby" style="top:0px;left:100px;width:75px;height:75px;"></div>
+		<div id="end" style="top:800px;left:1200px;width:100px;height:100px;"><p style="font-size:50px;position:absolute;left:5px;top:-50px">GO</p><p style="font-size:50px;position:absolute;left:10px;top:-7px">AL</p></div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <noscript><span id="nope"><br><center>Bitte Aktivien Sie Javascript!</center></span></noscript>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+	<head>
+<meta charset="utf-8">
+<style>
+	body{background-color:skyblue} 
+	#namen{font-variant:small-caps;font-weight:bold;color:red;font-family:fantasy}
+	.g{position:absolute;background:#451705;border-top-style:solid;border-top-color:green;border-top-width:10px;border-radius:5%}
+</style>
+<script>
+	
+	var spielername=null;
+	window.addEventListener("DOMContentLoaded", function(){
+	spielername=document.getElementById('spielername');
+	spielername.addEventListener("keydown", enter);
+	})
+	function enter(evt){
+		if(evt.key==="Enter"){
+			var val=spielername.value;
+			document.getElementById('namen').innerHTML=val;
+			spielername.style.display="none";
+			}} 
+	function drucken(){
+		document.getElementById('but').style.visibility="hidden";
+		window.print();
+		document.getElementById('but').style.visibility="visible";;
+		}
+		</script>
+
+	</head>	
+	<body>
+		<center><h1 style="font-family:sans-serif">GEWONNEN</h1>
+		<input type="text"id="spielername" placeholder="Name" >
+		<h2 id="namen"></h2>
+		<p style="font-family:fantasy;color:darkblue;">hat das Spiel "Jumping" von Elidragon Programming geschafft!</p>
+		<button id="but" onclick="drucken();">Drucken</button>
+		<div name="g" class="g"style="height:50px;width:750px;"></div>
+		
+		</center>
+	</body>
+</html>
