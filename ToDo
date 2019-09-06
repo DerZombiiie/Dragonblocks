@@ -1,0 +1,11 @@
+moremapgens [EF] DONE
+moretrees [EF] DONE
+chromium support for saving maps [EF]
+more maps [EF&DZ]
+
+ENGINE:
+setBlock() bugfix [EF] DONE
+add setBlockForce() [EF] DONE
+grow() bugfix [EF] DONE
+remove Maps folder: move Maps into a mod [EF] DONE
+
