@@ -317,20 +317,116 @@ blocks.push(aspen_wood);
 
 //Grow Functions
 function acaciatree(x,y){
-	return air;
+	//Trunk
+	setBlock(x,y-1,acacia_tree);
+	setBlock(x,y-2,acacia_tree);
+	setBlock(x,y-3,acacia_tree);
+	setBlock(x,y-4,acacia_tree);
+	setBlock(x,y-5,acacia_tree);
+	//Sticks
+	setBlock(x+1,y-3,acacia_tree);
+	setBlock(x-1,y-3,acacia_tree);
+	setBlock(x+2,y-4,acacia_tree);
+	setBlock(x-2,y-4,acacia_tree);
+	//Leaves
+	setBlock(x,y-6,acacia_leaves);
+	setBlock(x-1,y-6,acacia_leaves);
+	setBlock(x-1,y-5,acacia_leaves);
+	setBlock(x-1,y-4,acacia_leaves);
+	setBlock(x+1,y-6,acacia_leaves);
+	setBlock(x+1,y-5,acacia_leaves);
+	setBlock(x+1,y-4,acacia_leaves);
+	setBlock(x-2,y-5,acacia_leaves);
+	setBlock(x+2,y-5,acacia_leaves);
+	setBlock(x-3,y-5,acacia_leaves);
+	setBlock(x-3,y-4,acacia_leaves);
+	setBlock(x+3,y-5,acacia_leaves);
+	setBlock(x+3,y-4,acacia_leaves);
+	return acacia_tree;
 	}
 function acaciabush(x,y){
-	return air;
+	setBlock(x-1,y,acacia_leaves);
+	setBlock(x-1,y-1,acacia_leaves);
+	setBlock(x,y-1,acacia_leaves);
+	setBlock(x+1,y-1,acacia_leaves);
+	setBlock(x+1,y,acacia_leaves);
+	return acacia_bush_tree;
 	}	
 function pinetree(x,y){
-	return air;
+		setBlock(x,y-1,pine_tree);
+		setBlock(x-2,y-2,pine_leaves);
+		setBlock(x-1,y-2,pine_leaves);
+		setBlock(x,y-2,pine_leaves);
+		setBlock(x+2,y-2,pine_leaves);
+		setBlock(x+1,y-2,pine_leaves);
+		setBlock(x-2,y-3,pine_leaves);
+		setBlock(x-1,y-3,pine_leaves);
+		setBlock(x,y-3,pine_leaves);
+		setBlock(x+2,y-3,pine_leaves);
+		setBlock(x+1,y-3,pine_leaves);
+		setBlock(x-1,y-4,pine_leaves);
+		setBlock(x,y-4,pine_leaves);
+		setBlock(x+1,y-4,pine_leaves);
+		setBlock(x-1,y-5,pine_leaves);
+		setBlock(x,y-5,pine_leaves);
+		setBlock(x+1,y-5,pine_leaves);
+		setBlock(x,y-6,pine_leaves);
+		setBlock(x,y-7,pine_leaves);
+	return pine_tree
 	}
 function pinebush(x,y){
-	return air;
+	setBlock(x-1,y,pine_leaves);
+	setBlock(x-1,y-1,pine_leaves);
+	setBlock(x,y-1,pine_leaves);
+	setBlock(x+1,y-1,pine_leaves);
+	setBlock(x+1,y,pine_leaves);
+	return pine_bush_tree;
 	}	
 function aspentree(x,y){
-	return air;
+	setBlock(x,y-1,aspen_tree);
+	setBlock(x,y-2,aspen_tree);
+	setBlock(x,y-3,aspen_leaves);
+	setBlock(x,y-4,aspen_leaves);
+	setBlock(x,y-5,aspen_leaves);
+	setBlock(x-1,y-3,aspen_leaves);
+	setBlock(x-1,y-4,aspen_leaves);
+	setBlock(x-1,y-5,aspen_leaves);	
+	setBlock(x+1,y-3,aspen_leaves);
+	setBlock(x+1,y-4,aspen_leaves);
+	setBlock(x+1,y-5,aspen_leaves);	
+	setBlock(x+1,y-6,aspen_leaves);	
+	setBlock(x-1,y-6,aspen_leaves);	
+	setBlock(x,y-6,aspen_leaves);		
+	return aspen_tree;
 	}
 function jungletree(x,y){
-	return air;
+	setBlock(x+1,y,jungle_tree);
+	setBlock(x-1,y,jungle_tree);
+	setBlock(x,y-1,jungle_tree);
+	setBlock(x,y-2,jungle_tree);
+	setBlock(x,y-3,jungle_tree);
+	setBlock(x,y-4,jungle_tree);
+	setBlock(x,y-5,jungle_tree);
+	setBlock(x,y-6,jungle_leaves);
+	setBlock(x,y-7,jungle_leaves);
+	setBlock(x,y-8,jungle_leaves);
+	setBlock(x,y-9,jungle_leaves);
+	setBlock(x,y-10,jungle_leaves);
+	setBlock(x-1,y-6,jungle_leaves);
+	setBlock(x-1,y-7,jungle_leaves);
+	setBlock(x-1,y-8,jungle_leaves);
+	setBlock(x-1,y-9,jungle_leaves);
+	setBlock(x-1,y-10,jungle_leaves);
+	setBlock(x+1,y-6,jungle_leaves);
+	setBlock(x+1,y-7,jungle_leaves);
+	setBlock(x+1,y-8,jungle_leaves);
+	setBlock(x+1,y-9,jungle_leaves);
+	setBlock(x+1,y-10,jungle_leaves);
+	setBlock(x+2,y-7,jungle_leaves);
+	setBlock(x+2,y-8,jungle_leaves);
+	setBlock(x+2,y-9,jungle_leaves);
+	setBlock(x-2,y-7,jungle_leaves);
+	setBlock(x-2,y-8,jungle_leaves);
+	setBlock(x-2,y-9,jungle_leaves);
+	return jungle_tree;
 	}
