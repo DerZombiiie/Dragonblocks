@@ -37,7 +37,7 @@ function updateHudbar(){
 	itembar.style.width=hudbar.length*50+10+"px";
 	itembar.innerHTML = "";
 for(i=0;i<hudbar.length;i++){
-itembar.innerHTML = '<div id="'+i+'OnBar"style="width:40px;height:40px;position:absolute;top:10px;left:'+parseInt(i*50+10)+'px;background-image:'+hudbar[i].texture+';background-size:cover"></div>'+itembar.innerHTML; 
+itembar.innerHTML = '<div id="'+i+'OnBar"style="width:40px;height:40px;position:absolute;top:10px;left:'+parseInt(i*50+10)+'px;background:'+hudbar[i].texture+';background-size:cover"></div>'+itembar.innerHTML; 
 }
 
 var inv_itembar = document.getElementById('inv-itembar');
@@ -45,7 +45,7 @@ if(inv_itembar){
 	inv_itembar.style.width=hudbar.length*50+10+"px";
 	inv_itembar.innerHTML = "";
 for(i=0;i<hudbar.length;i++){
-inv_itembar.innerHTML = '<div onclick="selected_invbar_item = '+i+';hudbar[selected_invbar_item]=air;updateHudbar();"id="'+i+'OnInvBar"style="border-style:solid;border-width:1px;cursor:pointer;width:40px;height:40px;position:absolute;top:10px;left:'+parseInt(i*50+10)+'px;background-image:'+hudbar[i].texture+';background-size:cover;"></div>'+inv_itembar.innerHTML; 
+inv_itembar.innerHTML = '<div onclick="selected_invbar_item = '+i+';hudbar[selected_invbar_item]=air;updateHudbar();"id="'+i+'OnInvBar"style="border-style:solid;border-width:1px;cursor:pointer;width:40px;height:40px;position:absolute;top:10px;left:'+parseInt(i*50+10)+'px;background:'+hudbar[i].texture+';background-size:cover;"></div>'+inv_itembar.innerHTML; 
 }
 document.getElementById(selected_invbar_item+'OnInvBar').style.boxShadow="0 0 0 5px #444444";
 
@@ -71,7 +71,7 @@ function toggleInventory(){
 		newWindow.addEventListener("mouseover",inv_hide_hint);
 		var inv_allitems = document.getElementById('inv_allitems');
 		for(i=0;i<blocks.length;i++){
-			inv_allitems.innerHTML += '<div onclick="inv_click('+i+')"onmouseover="inv_over('+i+',event)"style="cursor:pointer;box-shadow:0 0 0 0px black inset;width:30px;height:30px;position:absolute;top:'+Math.floor(i/24)*35+'px;left:'+(i%24)*35+'px;background-image:'+blocks[i].texture+';background-size:cover"></div>'
+			inv_allitems.innerHTML += '<div onclick="inv_click('+i+')"onmouseover="inv_over('+i+',event)"style="cursor:pointer;box-shadow:0 0 0 0px black inset;width:30px;height:30px;position:absolute;top:'+Math.floor(i/24)*35+'px;left:'+(i%24)*35+'px;background:'+blocks[i].texture+';background-size:cover"></div>'
 		}
 	
 		updateHudbar();
