@@ -1,4 +1,4 @@
-var mySound = new sound("Mods/sounddemo/sounds/FUCK.mp3");
+var mySound = new sound("Mods/sounddemo/sounds/fuck.MP3");
 var fuck={
 name:"fuck",
 mobStability:true,
