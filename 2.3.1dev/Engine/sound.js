@@ -4,7 +4,7 @@ class sound{
 	this.filepath = filepath;
 	}
 	play(){
-		var src = document.getElementById('sound'+filepath);
+		var src = document.getElementById('sound'+this.filepath);
 		if(src){
 			src.play();
 			}
