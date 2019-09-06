@@ -15,6 +15,7 @@ inv:{
 	mod:"sounddemo",
 	},
 }
+blocks.push(fuck);
 function fucksound(){
 mySound.play();
 return air;
